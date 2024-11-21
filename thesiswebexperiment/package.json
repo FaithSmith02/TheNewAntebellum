@@ -10,15 +10,16 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^4.16.13",
     "@astrojs/check": "^0.9.4",
-    "typescript": "^5.6.3"
-  }
+    "astro": "^4.16.13",
+    "typescript": "^5.6.3",
+    "user": "^0.0.0"
+  },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
-  }
+  },
   "repository": {
-    "type": "git", 
+    "type": "git",
     "url": "https://github.com/FaithSmith02/WEBSITE"
   }
 }
