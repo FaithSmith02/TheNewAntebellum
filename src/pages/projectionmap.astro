@@ -111,8 +111,9 @@ import Card from "../components/Card.astro";
 	}
 	.text-gradient {
 	color: black; /* Set the text color to black */
-    text-shadow: 2px 2px 3px white, -2px -2px 3px white, 
-	2px -2px 3px white, -2px 2px 3px white;
+	-webkit-text-stroke-width: 1px;
+ 	-webkit-text-stroke-color: white;
+    
 	}
 
 	{/* 
@@ -123,7 +124,7 @@ import Card from "../components/Card.astro";
 		background-size: 400%;
 		background-position: 0%;
 	}*/}
-	
+
 	.instructions {
 		margin-bottom: 2rem;
 		border: 1px solid rgba(var(--accent-light), 25%);
