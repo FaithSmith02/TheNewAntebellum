@@ -110,12 +110,20 @@ import Card from "../components/Card.astro";
 		margin-bottom: 1em;
 	}
 	.text-gradient {
-		background-image: var(--accent-gradient);
+	color: black; /* Set the text color to black */
+    text-shadow: 2px 2px 3px white, -2px -2px 3px white, 
+	2px -2px 3px white, -2px 2px 3px white;
+	}
+
+	{/* 
+	.text-gradient {
+		*background-image: var(--accent-gradient);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		background-size: 400%;
 		background-position: 0%;
-	}
+	}*/}
+	
 	.instructions {
 		margin-bottom: 2rem;
 		border: 1px solid rgba(var(--accent-light), 25%);
