@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
+import Navigation from '../components/navigation.astro';
 ---
 <!-- add a navigation bar or something soon-->
 
@@ -25,7 +26,7 @@ import Card from "../components/Card.astro";
 				</linearGradient>
 			</defs>
 		</svg>
-		<h1>THE <span class="text-gradient">NEW</span> ANTEBELLUM</h1>
+		<h1>THE NEW ANTEBELLUM</h1>
 		<div
 			class="flourish-embed flourish-map"
 			data-src="visualisation/20591069"
@@ -99,6 +100,9 @@ import Card from "../components/Card.astro";
 		line-height: 1;
 		text-align: center;
 		margin-bottom: 1em;
+	}
+	a {
+		color: white;
 	}
 	.text-gradient {
 		color: white;
