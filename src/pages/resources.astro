@@ -1,10 +1,5 @@
----
-import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
----
-<!-- add a navigation bar or something soon-->
 
-<Layout title="ProjectionMap">
+<Layout title="resources">
 	<main>
 			<path
 				fill-rule="evenodd"
@@ -25,21 +20,24 @@ import Card from "../components/Card.astro";
 				</linearGradient>
 			</defs>
 		</svg>
+        <p class="2021profit"> 
+            Incarcerated workers produced more than $2 billion dollars worth of 
+            goods and services in 2021.
+        </p>
+        <p class="2021profit" id="Subtitle"> 
+            Source:National Correctional Industries Assosociation
+        </p>
+
+		<a href="/projectionmap/">
+			See the Facts
+		</a>
+
+
+
+		
+		{/*
+
 		<h1>THE <span class="text-gradient">NEW</span> ANTEBELLUM</h1>
-		<div
-			class="flourish-embed flourish-map"
-			data-src="visualisation/20591069"
-		>
-			<script src="https://public.flourish.studio/resources/embed.js"
-			></script><noscript
-				><img
-					src="https://public.flourish.studio/visualisation/20591069/thumbnail"
-					width="100%"
-					alt="map visualization"
-				/></noscript
-			>
-		</div>
-		 {/*
 		<div
 
 		<p class="instructions">
@@ -71,6 +69,7 @@ import Card from "../components/Card.astro";
 			/>
 		</ul>
 		*/}
+
 	</main>
 </Layout>
 
@@ -95,30 +94,18 @@ import Card from "../components/Card.astro";
 	}
 	h1 {
 		font-size: 4rem;
-		font-weight: bold;
+		font-weight: 700;
 		line-height: 1;
 		text-align: center;
 		margin-bottom: 1em;
 	}
 	.text-gradient {
-		color: white;
-		font-size: 4rem;
-		font-weight: bold;
-		line-height: 1;
-		text-align: center;
-		margin-bottom: 1em;
-    
-	}
-
-	{/* 
-	.text-gradient {
-		*background-image: var(--accent-gradient);
+		background-image: var(--accent-gradient);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		background-size: 400%;
 		background-position: 0%;
-	}*/}
-
+	}
 	.instructions {
 		margin-bottom: 2rem;
 		border: 1px solid rgba(var(--accent-light), 25%);

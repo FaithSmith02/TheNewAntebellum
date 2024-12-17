@@ -6,15 +6,7 @@ import Card from "../components/Card.astro";
 
 <Layout title="Introduction">
 	<main>
-		<svg
-			class="astro-a"
-			width="495"
-			height="623"
-			viewBox="0 0 495 623"
-			fill="none"
-			xmlns="http://www.w3.org/2000/svg"
-			aria-hidden="true"
-		>
+		
 			<path
 				fill-rule="evenodd"
 				clip-rule="evenodd"
@@ -34,15 +26,15 @@ import Card from "../components/Card.astro";
 				</linearGradient>
 			</defs>
 		</svg>
-        <p class="2021profit"> 
+        <p class="profit"> 
             Incarcerated workers produced more than $2 billion dollars worth of 
             goods and services in 2021.
         </p>
-        <p class="2021profit" id="Subtitle"> 
-            Source:National Correctional Industries Assosociation
+        <p class="source" id="Subtitle"> 
+            Source: National Correctional Industries Assosociation
         </p>
 
-		<div>
+		<div class="source">
 			<a href="projectionmap/">See the Facts</a>
 		</div>
 
@@ -107,9 +99,9 @@ import Card from "../components/Card.astro";
 		height: auto;
 		z-index: -1;
 	}
-	h1 {
-		font-size: 4rem;
-		font-weight: 700;
+	.profit {
+		font-size: 3rem;
+		font-weight: bold;
 		line-height: 1;
 		text-align: center;
 		margin-bottom: 1em;
@@ -147,5 +139,15 @@ import Card from "../components/Card.astro";
 		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
 		gap: 2rem;
 		padding: 0;
+	}
+	.source {
+		font-size: 1.5rem;
+		font-weight: bold;
+		line-height: 3;
+		text-align: center;
+		margin-bottom: 1em;
+	}
+	.a {
+		text-decoration: none;
 	}
 </style>
