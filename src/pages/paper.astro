@@ -17,11 +17,15 @@ import Navigation from '../components/navigation.astro';
 		<h1>THE NEW ANTEBELLUM</h1>
 		<Navigation/>
 		
-				<iframe class="pdf" 
-						src=
-		"https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210101201653/PDF.pdf"
-					width="800" height="500">
-				</iframe>	
+		<p>The New Antebellum is a research project that explores the roots of the United States’ carceral
+			system and examines the relationship between prison work programs and the American
+			economy. There’s a lack of transparency surrounding many of the regulatory systems, goods, and
+			services that shape the United States of America. Through neoliberalism and racial capitalism,
+			the United States constructs a criminal industrial complex to extract value from the biopolitics of
+			disposability and conceal the sociopolitical problems plaguing the country.</p>
+		<iframe 
+		src="https://drive.google.com/file/d/1FdqugKznD_TLWQFQnS_eDJy6vqQwkLP-/preview" width="640" height="480" allow="autoplay">
+		</iframe>
 	</body>
 		</html>
 
@@ -29,23 +33,21 @@ import Navigation from '../components/navigation.astro';
 </Layout>
 
 <style>
+	
 	main {
 		margin: auto;
-		padding: 1rem;
+		padding: 0.5rem;
 		width: 800px;
 		max-width: calc(100% - 2rem);
 		color: white;
 		font-size: 20px;
 		line-height: 1.6;
 	}
-	.astro-a {
-		position: absolute;
-		top: -32px;
-		left: 50%;
-		transform: translatex(-50%);
-		width: 220px;
-		height: auto;
-		z-index: -1;
+	p {
+		color: white;
+		padding: 2rem;
+		margin: 2rem;
+
 	}
 	h1 {
 		font-size: 4rem;
@@ -55,38 +57,7 @@ import Navigation from '../components/navigation.astro';
 		margin-bottom: 1em;
 		color: white;
 	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		margin-bottom: 2rem;
-		border: 1px solid rgba(var(--accent-light), 25%);
-		background: linear-gradient(
-			rgba(var(--accent-dark), 66%),
-			rgba(var(--accent-dark), 33%)
-		);
-		padding: 1.5rem;
-		border-radius: 8px;
-	}
-	.instructions code {
-		font-size: 0.8em;
-		font-weight: bold;
-		background: rgba(var(--accent-light), 12%);
-		color: rgb(var(--accent-light));
-		border-radius: 4px;
-		padding: 0.3em 0.4em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent-light));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 2rem;
-		padding: 0;
+	h3 {
+		color: white;
 	}
 </style>
